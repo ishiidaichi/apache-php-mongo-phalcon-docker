@@ -13,7 +13,11 @@ Build a docker image from the downloaded Dockerfile:
 
 Then, run the docker image:
 
-`docker run -p 80:80 -v /path/to/the/webroot/:/var/www/html YOURTAG`
+`docker run -d -p 80:80 -v /path/to/the/webroot:/var/www/html YOURTAG`
+
+If you want to run the image at your local machine using port 8080, type this:
+
+`docker run -d -p 8080:80 -v /path/to/the/webroot:/var/www/html YOURTAG`
 
 That's it!
 
