@@ -13,6 +13,9 @@ Build a docker image from the downloaded Dockerfile:
 
 `cd apache-php-mongo-phalcon-docker & docker build -t YOURTAG .`
 
+Actually, it may take 10-15 minutes to finish the building process. 
+ Why don't you wait over a cup of coffee?
+ 
 Then, run the docker image:
 
 `docker run -d -p 80:80 -v /path/to/the/webroot:/var/www/html YOURTAG`
