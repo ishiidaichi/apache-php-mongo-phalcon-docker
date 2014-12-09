@@ -26,3 +26,15 @@ If you want to run the image at your local machine using port 8080, type this:
 
 That's it!
 
+## Use docker hub repository
+
+You can also get the docker image directly from docker hub:
+
+`docker pull ishiidaichi/apache-php-mongo-phalcon`
+
+Once you donload the image, all you need to do is to run the `docker run` command like above.
+
+The Docker repository page is the link below:
+
+https://registry.hub.docker.com/u/ishiidaichi/apache-php-mongo-phalcon/
+
