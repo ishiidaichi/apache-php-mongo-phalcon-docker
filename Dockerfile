@@ -9,7 +9,7 @@ ADD default.conf /etc/httpd/conf.d/virtualhost-default.conf
 
 RUN rpm -Uvh http://ftp.iij.ad.jp/pub/linux/fedora/epel/6/x86_64/epel-release-6-8.noarch.rpm
 RUN rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
-RUN yum -y install --enablerepo=remi --enablerepo=remi-php56 php php-opcache php-devel php-mbstring php-mcrypt php-mysqlnd php-pecl-xdebug php-pecl-xhprof pcre-devel
+RUN yum -y install --enablerepo=remi --enablerepo=remi-php56 php php-opcache php-devel php-mbstring php-mcrypt php-mysqlnd php-pecl-xdebug php-pecl-xhprof pcre-devel php-gd php-gmp
 
 ADD mongodb.repo /etc/yum.repos.d/mongodb.repo
 RUN yum install -y mongodb-org
